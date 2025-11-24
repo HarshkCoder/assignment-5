@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const index = () => {
+  return (
+    <section id="index" className="index">
+      <h1>Hi, I'm Harsh Jain 👋</h1>
+      <p>React Developer | Problem Solver | Tech Enthusiast</p>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+      <a className="btn" href="/resume.pdf" download>
+        Download Resume
+      </a>
+    </section>
+  );
+};
+
+export default index;
